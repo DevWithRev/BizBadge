@@ -1672,11 +1672,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\revan\\Source\\Repos\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
+      "projectUniqueName": "D:\\BizBadge\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
       "projectName": "BizBadgeApp",
-      "projectPath": "C:\\Users\\revan\\Source\\Repos\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
+      "projectPath": "D:\\BizBadge\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
       "packagesPath": "C:\\Users\\revan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\revan\\Source\\Repos\\BizBadge\\BizBadgeApp\\obj\\",
+      "outputPath": "D:\\BizBadge\\BizBadge\\BizBadgeApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

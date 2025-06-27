@@ -16,7 +16,7 @@
         {
             _connectionString = connectionString;
         }
-        public string GetConnectionStrig()
+        public  string GetConnectionStrig()
         {
             return _connectionString.GetConnectionString("DefaultConnection");
 

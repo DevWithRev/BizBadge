@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jbr1J6v+qiM=",
+  "dgSpecHash": "/EeAaxYsa0k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\revan\\Source\\Repos\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
+  "projectFilePath": "D:\\BizBadge\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\revan\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\revan\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
