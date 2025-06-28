@@ -16,7 +16,7 @@ namespace BizBadgeApp.Controllers
         }
         public IActionResult LoginPage()
         {
-            return View();
+            return View("LoginPage");
         }
 
         [HttpPost]
@@ -24,18 +24,20 @@ namespace BizBadgeApp.Controllers
         {
             string ConnectionString = _connection.GetConnectionStrig();
             LoginValidate userRepo = new LoginValidate();
-            bool isValidUser = userRepo.IsUserExist(user,ConnectionString);
-            if (isValidUser) 
+            LoginModel foundUser = userRepo.IsUserExist(user,ConnectionString);
+            if (foundUser !=null) 
             {
-                // User is valid, redirect to the dashboard or home page
+               HttpContext.Session.SetString("Name", foundUser.Name);
+               HttpContext.Session.SetString("Email", foundUser.Name);
+
                 ViewData["Message"] = "Login Successful";
-                return RedirectToAction("Index", "Home");
+                //RedirectToAction("Index", "Home");
+                return View("LoginPage",foundUser);
             }                               
             else
             {
-                // Invalid user, show error message
                 ViewData["Message"] = "Invalid email or password.";
-                return View("LoginPage", user); // Keep user input on screen
+                return View("LoginPage", user); 
             }   
             
         }

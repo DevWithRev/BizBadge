@@ -29,11 +29,10 @@ namespace BizBadgeApp.Repos
                 cmd.Parameters.AddWithValue("@Name", user.Name);
                 cmd.Parameters.AddWithValue("@Email", user.Email);
                 cmd.Parameters.AddWithValue("@PhoneNo", user.PhoneNumber);
-                cmd.Parameters.AddWithValue("@Password", user.Password); // ⚠️ Hash password in real apps
-
+                cmd.Parameters.AddWithValue("@Password", user.Password); 
                 conn.Open();
                 int result = cmd.ExecuteNonQuery();
-                conn.Close(); // optional due to using block
+                conn.Close(); 
                 return result;
             }
         }
