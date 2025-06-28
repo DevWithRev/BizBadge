@@ -6,15 +6,19 @@ namespace BizBadgeApp.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        //private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
+        //public HomeController(ILogger<HomeController> logger)
+        //{
+        //    _logger = logger;
+        //}
 
+        [HttpGet]
         public IActionResult Index()
         {
+            string? email = HttpContext.Session.GetString("Email");
+            string? name = HttpContext.Session.GetString("Name");
+            ViewBag.UserName = name;
             return View();
         }
 

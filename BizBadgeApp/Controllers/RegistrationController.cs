@@ -23,7 +23,7 @@ namespace BizBadgeApp.Controllers
             if(UserData.Password != UserData.ConfirmPassword) 
             {
                 ViewData["Message"] = "Password doesn't Match with confirm Password";
-                return View("RegistrationPage",UserData); // Keep user input on screen
+                return View("RegistrationPage",UserData); 
             }
             UserRegistration userRepo = new UserRegistration();
             string conn = _connection.GetConnectionStrig();
@@ -33,19 +33,19 @@ namespace BizBadgeApp.Controllers
             if (userAlreadyExist)
             {
                 ViewData["Message"] = "Email or Phone number already exists.";
-                return View(UserData); // Keep user input on screen
+                return View("RegistrationPage",UserData); 
             }
             int result = userRepo.InsertUserDetails(UserData, conn);
             if (result>=1)
             {
                 ViewData["Message"] = "Rigerster Succesfull";
-                return View("RegistrationPage"); // Keep user input on screen
+                return View("RegistrationPage"); 
             }
 
 
 
             ViewData["Message"] = "Registration successful!";
-            return RedirectToAction("Login"); // or return View("Success");
+            return RedirectToAction("Login"); 
         }
 
     }
