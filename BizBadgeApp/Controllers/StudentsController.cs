@@ -2,33 +2,58 @@
 using BizBadgeApp.Models;
 using BizBadgeApp.Repos;
 using Microsoft.AspNetCore.Mvc;
+using BizBadgeApp.Filters; // ✅ Add this
 
 namespace BizBadgeApp.Controllers
 {
+    [NoCache] // ✅ Prevent browser from caching
     public class StudentsController : Controller
     {
         private readonly DbConnectionStringcs _connection;
         public StudentsController(DbConnectionStringcs connection)
         {
             _connection = connection;
-        }   
+        }
+
         [HttpGet]
         public IActionResult Student()
         {
+            // ✅ Check if session is valid
+            if (HttpContext.Session.GetString("Name") == null)
+            {
+                return RedirectToAction("LoginPage", "Login");
+            }
+
             string connectionString = _connection.GetConnectionStrig();
-            // Here you can use the connection string to interact with the database if needed.
             ClassesRepo classesRepo = new ClassesRepo();
             List<ClassesModel> classesList = classesRepo.GetAllClasses(connectionString);
-            return View("StudentPage",classesList);
-            // This method handles GET requests for the Student page.
-            // This action method will return the view for the Student page.
+            string? name = HttpContext.Session.GetString("Name");
+            ViewBag.UserName = name;
 
-            
+            return View("StudentPage", classesList);
         }
+
         [HttpGet]
-        public IActionResult StudentDetils() 
+        public IActionResult StudentDetils(int id)
         {
-            return View();
+            // ✅ Session check
+            if (HttpContext.Session.GetString("Name") == null)
+            {
+                return RedirectToAction("LoginPage", "Login");
+            }
+
+            string conn = _connection.GetConnectionStrig();
+            StudentsRepo studentsRepo = new StudentsRepo();
+            List<StudentModel> ClassWiseStudentList = studentsRepo.GetClassWiseStudentData(id, conn);
+
+            return View("ClassWiseStudentsList", ClassWiseStudentList);
+        }
+
+        [HttpGet]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear(); // ✅ Clear session
+            return RedirectToAction("LoginPage", "Login"); // ✅ Go to login page
         }
     }
 }
