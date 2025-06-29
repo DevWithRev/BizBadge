@@ -29,6 +29,7 @@ namespace BizBadgeApp.Repos
                         student.Age = Convert.ToInt32(reader["age"]);
                         student.MobileNumber = reader["MobileNumber"].ToString();
                         student.Address = reader["Address"] == DBNull.Value ? null : reader["Address"].ToString();
+                        student.ClassId = Convert.ToInt32(reader["ClassId"]);
                         student.ClassName = reader["ClassName"].ToString();
                         students.Add(student);
                     }
@@ -38,13 +39,32 @@ namespace BizBadgeApp.Repos
                     Console.WriteLine(ex.Message);
                 }
                 return students;
-            }
+            }   
             
-            
-            
-            
-            
-            return new List<StudentModel>();
         }
+        public int NewStudetData(StudentModel newStudent, string conn)
+        {
+            using (SqlConnection con = new SqlConnection(conn))
+            {
+                SqlCommand cmd = new SqlCommand("Usp_InsertStudent", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                // Add parameters
+                cmd.Parameters.AddWithValue("@FirstName", newStudent.FirstName);
+                cmd.Parameters.AddWithValue("@LastName", newStudent.LastName);
+                cmd.Parameters.AddWithValue("@FatherName", newStudent.FatherName);
+                cmd.Parameters.AddWithValue("@MotherName", newStudent.MotherName);
+                cmd.Parameters.AddWithValue("@MobileNumber", newStudent.MobileNumber);
+                cmd.Parameters.AddWithValue("@Age", newStudent.Age);
+                cmd.Parameters.AddWithValue("@Address", newStudent.Address);
+                cmd.Parameters.AddWithValue("@ClassID", newStudent.ClassId); // Make sure this is in your model
+
+                con.Open();
+                int result = cmd.ExecuteNonQuery(); // returns number of rows affected
+                return result;
+            }
+        }
+
     }
+
 }
