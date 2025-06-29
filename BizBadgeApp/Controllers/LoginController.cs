@@ -14,10 +14,12 @@ namespace BizBadgeApp.Controllers
         {
             _connection = connection;
         }
+        [HttpGet]
         public IActionResult LoginPage()
         {
-            return View("LoginPage");
+            return View();
         }
+
 
         [HttpPost]
         public IActionResult Login(LoginModel user)
@@ -28,7 +30,7 @@ namespace BizBadgeApp.Controllers
             if (foundUser !=null) 
             {
                HttpContext.Session.SetString("Name", foundUser.Name);
-               HttpContext.Session.SetString("Email", foundUser.Name);
+               HttpContext.Session.SetString("Email", foundUser.Email);
 
                 ViewData["Message"] = "Login Successful";
                 //RedirectToAction("Index", "Home");

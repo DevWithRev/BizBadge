@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BizBadgeApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15d951a1e4f6ab3d2eddc306f6ce2bf6ad4664ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+582dbf6f37816eb42ecf589e4256480afd58bc81")]
 [assembly: System.Reflection.AssemblyProductAttribute("BizBadgeApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BizBadgeApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
