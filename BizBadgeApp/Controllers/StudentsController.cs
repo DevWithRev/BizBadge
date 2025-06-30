@@ -45,8 +45,53 @@ namespace BizBadgeApp.Controllers
             string conn = _connection.GetConnectionStrig();
             StudentsRepo studentsRepo = new StudentsRepo();
             List<StudentModel> ClassWiseStudentList = studentsRepo.GetClassWiseStudentData(id, conn);
-
+            ViewBag.ClassId = id;
+            if (ClassWiseStudentList.Any())
+                ViewBag.ClassName = ClassWiseStudentList.First().ClassName;
+            else
+                ViewBag.ClassName = "Unknown";
             return View("ClassWiseStudentsList", ClassWiseStudentList);
+        }
+
+        [HttpGet]
+        public IActionResult AddStudent(int classId, string className)
+        {
+            ViewBag.ClassId = classId;
+            ViewBag.ClassName = className;
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddStudent(StudentModel NewStudent) 
+        {
+            string conn = _connection.GetConnectionStrig();
+            StudentsRepo repo = new StudentsRepo();
+            int result = repo.NewStudetData(NewStudent, conn);
+            if (result <= 1) 
+            {
+                ViewData["Succes"] = "New Student Added";
+                return View();
+            }
+            else 
+            {
+                ViewData["Succes"] = "Error";
+                return View();
+            }
+           
+        }
+        [HttpGet]
+        public IActionResult EditStudent(int id) 
+        {
+            string conn = _connection.GetConnectionStrig();
+            StudentsRepo repo = new StudentsRepo();
+            StudentModel student = repo.GetStudentById(id, conn);
+            if (student == null)
+            {
+                return NotFound(); // ✅ Handle not found case
+            }
+
+            ViewBag.ClassId = student.ClassId;
+            ViewBag.ClassName = student.ClassName;
+            return View();
         }
 
         [HttpGet]
