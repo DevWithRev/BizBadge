@@ -80,7 +80,7 @@
                                     <td>@item.Address</td>
                                     <td>@item.ClassId</td>
                                     <td>
-                                        <a asp-action="StudentDetils" asp-controller="Students">Edit</a>/<a asp-action="StudentDetils" asp-controller="Students">Delete</a>
+                                        <a asp-action="EditStudent" asp-controller="Students" asp-route-Id="@item.Id">Edit</a>/<a asp-action="StudentDetils" asp-controller="Students">Delete</a>
                                         </td>
                                 </tr>
                             }

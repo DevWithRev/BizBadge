@@ -78,6 +78,21 @@ namespace BizBadgeApp.Controllers
             }
            
         }
+        [HttpGet]
+        public IActionResult EditStudent(int id) 
+        {
+            string conn = _connection.GetConnectionStrig();
+            StudentsRepo repo = new StudentsRepo();
+            StudentModel student = repo.GetStudentById(id, conn);
+            if (student == null)
+            {
+                return NotFound(); // ✅ Handle not found case
+            }
+
+            ViewBag.ClassId = student.ClassId;
+            ViewBag.ClassName = student.ClassName;
+            return View();
+        }
 
         [HttpGet]
         public IActionResult Logout()
