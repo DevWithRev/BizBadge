@@ -65,19 +65,20 @@ namespace BizBadgeApp.Repos
             }
         }
 
-        public StudentModel GetStudentById(int id ,string conn)
+        public StudentModel GetStudentById(int id, string conn)
         {
-           using(SqlConnection connection =
-                new SqlConnection(conn))
+            using (SqlConnection connection = new SqlConnection(conn))
             {
-                SqlCommand command = new SqlCommand("SELECT * FROM STUDENTS WHERE StudentId=@StudentID", connection);
-              
+                SqlCommand command = new SqlCommand("Usp_GetStudentById", connection);
+                command.CommandType = CommandType.StoredProcedure;
                 command.Parameters.AddWithValue("@StudentID", id);
+
                 connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
+
                 if (reader.Read())
                 {
-                    return new StudentModel
+                    StudentModel student = new StudentModel
                     {
                         Id = Convert.ToInt32(reader["StudentID"]),
                         FirstName = reader["FirstName"].ToString(),
@@ -87,13 +88,46 @@ namespace BizBadgeApp.Repos
                         MobileNumber = reader["MobileNumber"].ToString(),
                         Age = Convert.ToInt32(reader["Age"]),
                         Address = reader["Address"] == DBNull.Value ? null : reader["Address"].ToString(),
-                        ClassId = Convert.ToInt32(reader["ClassId"]),
-                        ClassName = reader["ClassName"].ToString()
+                        ClassId = Convert.ToInt32(reader["ClassID"])
+                        // ClassName is not returned by the procedure; remove or fetch separately
                     };
+
+                    return student;
                 }
-                return null; // or throw an exception if not found
             }
 
+            return null; // If student not found
         }
+
+        public int UpdateStudent(StudentModel student,string con) 
+        {
+            using(SqlConnection conn = new SqlConnection(con)) 
+            {
+                SqlCommand command = new SqlCommand("Usp_UpdateStudent", conn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.AddWithValue("@StudentID", student.Id);
+                command.Parameters.AddWithValue("@FirstName", student.FirstName);
+                command.Parameters.AddWithValue("@LastName", student.LastName);
+                command.Parameters.AddWithValue("@FatherName", student.FatherName);
+                command.Parameters.AddWithValue("@MotherName", student.MotherName);
+                command.Parameters.AddWithValue("@MobileNumber", student.MobileNumber);
+                command.Parameters.AddWithValue("@Age", student.Age);
+                command.Parameters.AddWithValue("@Address", student.Address);
+                command.Parameters.AddWithValue("@ClassID", student.ClassId);
+                conn.Open();
+                int result = command.ExecuteNonQuery();
+                if (result > 0)
+                {
+                    return result; // Return updated student
+                }
+                else
+                {
+                    return 0; // Update failed
+                }
+            }
+        }
+
     }
+
 }
+

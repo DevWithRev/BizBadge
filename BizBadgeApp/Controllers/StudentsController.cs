@@ -91,8 +91,27 @@ namespace BizBadgeApp.Controllers
 
             ViewBag.ClassId = student.ClassId;
             ViewBag.ClassName = student.ClassName;
-            return View();
+            return View("EditStudent",student);
         }
+        [HttpPost]
+        public IActionResult UpdateStudent(StudentModel student)
+        {
+            string conn = _connection.GetConnectionStrig();
+            StudentsRepo repo = new StudentsRepo();
+            int result = repo.UpdateStudent(student, conn);
+            if (result > 0)
+            {
+                ViewData["Succes"] = "Student Updated Successfully"; // ✅ Success message
+                List<StudentModel> students = repo.GetClassWiseStudentData(student.ClassId, conn);
+                return View("ClassWiseStudentsList",students); // ✅ Handle not found case
+            }
+
+            ViewBag.ClassId = student.ClassId;
+            ViewBag.ClassName = student.ClassName;
+            return View("EditStudent");
+        }
+
+
 
         [HttpGet]
         public IActionResult Logout()

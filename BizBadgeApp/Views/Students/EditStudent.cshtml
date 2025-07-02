@@ -14,7 +14,7 @@
     <div class="container">
         <h2 class="mb-4">Edit Student: @Model.FirstName @Model.LastName</h2>
 
-        <form asp-action="EditStudent" method="post">
+        <form asp-action="UpdateStudent" method="post">
             <!-- Hidden fields for StudentId and ClassId -->
             <input type="hidden" asp-for="Id" />
             <input type="hidden" asp-for="ClassId" />
@@ -67,4 +67,3 @@
     </div>
 </body>
 </html>
-sss
