@@ -39,7 +39,7 @@
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th>Id</th>
+                               @*  <th>Id</th> *@
                                 <th>ClassName</th>
                                 <th>Students</th>
                             </tr>
@@ -48,7 +48,7 @@
                             @foreach (var item in Model)
                             {
                                 <tr>
-                                    <td>@item.ClassID</td>
+                                    @* <td>@item.ClassID</td> *@
                                     <td>@item.ClassName</td>
                                     <td>
                                         <a asp-action="StudentDetils" asp-controller="Students" asp-route-id="@item.ClassID">Click</a>

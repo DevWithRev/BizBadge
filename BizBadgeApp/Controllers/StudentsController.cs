@@ -66,8 +66,11 @@ namespace BizBadgeApp.Controllers
             string conn = _connection.GetConnectionStrig();
             StudentsRepo repo = new StudentsRepo();
             int result = repo.NewStudetData(NewStudent, conn);
+           
             if (result <= 1) 
             {
+                ViewBag.ClassId = NewStudent.ClassId;
+                ViewBag.ClassName = NewStudent.ClassName;
                 ViewData["Succes"] = "New Student Added";
                 return View();
             }
@@ -111,6 +114,26 @@ namespace BizBadgeApp.Controllers
             return View("EditStudent");
         }
 
+
+        [HttpGet]
+        public IActionResult DeleteStudent(int id, int classId)
+        {
+            string conn = _connection.GetConnectionStrig();
+            StudentsRepo repo = new StudentsRepo();
+
+            int result = repo.DeleteStudent(id, conn);
+
+            if (result > 0)
+            {
+                ViewData["Success"] = "Student deleted successfully.";
+                List<StudentModel> students = repo.GetClassWiseStudentData(classId, conn);
+                return View("ClassWiseStudentsList", students);
+            }
+
+            ViewData["Error"] = "Failed to delete student.";
+            List<StudentModel> fallbackStudents = repo.GetClassWiseStudentData(classId, conn);
+            return View("ClassWiseStudentsList", fallbackStudents);
+        }
 
 
         [HttpGet]

@@ -52,13 +52,15 @@
                 </div>
                 @if (ViewData["Succes"] != null)
                 {
-                    <div class="alert alert-success">
+                    <div class="alert alert-success justify-content-center">
                         @ViewData["Succes"]
                     </div>
                 }
 
                 <div class="col-12 text-end">
                     <button type="submit" class="btn btn-primary">Add Student</button>
+                
+                    <a asp-action="StudentDetils" asp-controller="Students" asp-route-id="@ViewBag.ClassId" class="btn btn-danger">Back</a>
                 </div>
             </div>
         </form>

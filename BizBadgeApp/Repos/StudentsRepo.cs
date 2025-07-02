@@ -127,6 +127,27 @@ namespace BizBadgeApp.Repos
             }
         }
 
+        public int DeleteStudent(int id,string con) 
+        {
+            using(SqlConnection conn = new SqlConnection(con)) 
+            {
+                try
+                {
+                    SqlCommand cmd = new SqlCommand("DELETE FROM STUDENTS WHERE STUDENTID =@StudentId", conn);
+                    cmd.Parameters.AddWithValue("@StudentId", id);
+                    conn.Open();
+                    int result = cmd.ExecuteNonQuery();
+                    conn.Close();
+                    return result;
+                }
+                catch ( Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    return 0;
+                }
+            }
+          
+        }
     }
 
 }
