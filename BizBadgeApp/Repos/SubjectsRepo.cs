@@ -1,5 +1,6 @@
 ﻿using BizBadgeApp.Models;
 using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace BizBadgeApp.Repos
 {
@@ -44,5 +45,30 @@ namespace BizBadgeApp.Repos
                 }
             }
         }
+        public int AddSubject(SubjectModel subject, string con)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(con))
+                {
+                    SqlCommand cmd = new SqlCommand("Usp_AddSubject", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    // Add parameters without spaces in the name
+                    cmd.Parameters.AddWithValue("@SubjectName", subject.SubjectName);
+                    cmd.Parameters.AddWithValue("@SubjectCode", subject.SubjectCode);
+                    cmd.Parameters.AddWithValue("@SubjectDescription", subject.SubjectDescription);
+
+                    conn.Open();
+                    int rowsAffected = cmd.ExecuteNonQuery(); // Returns number of rows inserted
+                    return rowsAffected;
+                }
+            }
+            catch (Exception ex)
+            {
+                return 0;
+            }
+        }
+
     }
 }
