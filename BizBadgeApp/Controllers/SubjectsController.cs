@@ -35,5 +35,27 @@ namespace BizBadgeApp.Controllers
             }
 
         }
+        [HttpGet]
+        public IActionResult AddSubject() 
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddSubject(SubjectModel subject) 
+        {
+            string conn = _connection.GetConnectionStrig();
+            SubjectsRepo repo = new SubjectsRepo();
+            int result = repo.AddSubject(subject, conn);
+            if (result > 0)
+            {
+                ViewBag.Success = "Subject added successfully.";
+                return View();
+            }
+            else
+            {
+                ViewBag.Error = "Failed to add subject. Please try again.";
+                return View();
+            }
+        }
     }
 }
