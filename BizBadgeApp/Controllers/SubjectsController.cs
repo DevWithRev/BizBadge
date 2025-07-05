@@ -57,5 +57,13 @@ namespace BizBadgeApp.Controllers
                 return View();
             }
         }
+        [HttpGet]
+        public IActionResult UpdateSubject(int id) 
+        {
+            string con = _connection.GetConnectionStrig();
+            SubjectsRepo repo = new SubjectsRepo();
+            SubjectModel subject = repo.GetSubjectDataById(id, con);
+            return View("UpdateSubject",subject);
+        }
     }
 }

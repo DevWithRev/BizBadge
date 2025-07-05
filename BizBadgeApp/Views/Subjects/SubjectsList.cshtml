@@ -63,7 +63,7 @@
                                                 <td>@subject.SubjectName</td>
                                                 <td>@subject.SubjectDescription</td>
                                                 <td>
-                                                    <a href="@Url.Action("Edit", "Subjects", new { id = subject.Id })" class="btn btn-primary">Edit</a>
+                                                    <a href="@Url.Action("UpdateSubject", "Subjects", new { id = subject.Id })" class="btn btn-primary">Edit</a>
                                                     <a href="@Url.Action("Delete", "Subjects", new { id = subject.Id })" class="btn btn-danger">Delete</a>
                                                 </td>
                                             </tr>
