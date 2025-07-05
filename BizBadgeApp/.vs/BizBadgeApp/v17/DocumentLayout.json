@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\project\\source\\repos\\bizbadge\\bizbadgeapp\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\project\\source\\repos\\bizbadge\\bizbadgeapp\\views\\subjects\\updatesubject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:views\\subjects\\updatesubject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\project\\source\\repos\\bizbadge\\bizbadgeapp\\repos\\subjectsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:repos\\subjectsrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\project\\source\\repos\\bizbadge\\bizbadgeapp\\views\\subjects\\addsubject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:views\\subjects\\addsubject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\project\\source\\repos\\bizbadge\\bizbadgeapp\\controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:controllers\\subjectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\project\\source\\repos\\bizbadge\\bizbadgeapp\\views\\subjects\\subjectslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:views\\subjects\\subjectslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\project\\source\\repos\\bizbadge\\bizbadgeapp\\views\\subjects\\addsubject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:views\\subjects\\addsubject.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\project\\source\\repos\\bizbadge\\bizbadgeapp\\filters\\nocacheattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:filters\\nocacheattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\project\\source\\repos\\bizbadge\\bizbadgeapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -36,14 +48,14 @@
               "RelativeDocumentMoniker": "Repos\\SubjectsRepo.cs",
               "ToolTip": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\Repos\\SubjectsRepo.cs",
               "RelativeToolTip": "Repos\\SubjectsRepo.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAYwEYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAgwEgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-04T17:50:53.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AddSubject.cshtml",
               "DocumentMoniker": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\Views\\Subjects\\AddSubject.cshtml",
               "RelativeDocumentMoniker": "Views\\Subjects\\AddSubject.cshtml",
@@ -56,13 +68,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "SubjectsController.cs",
               "DocumentMoniker": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\Controllers\\SubjectsController.cs",
               "RelativeDocumentMoniker": "Controllers\\SubjectsController.cs",
               "ToolTip": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\Controllers\\SubjectsController.cs",
               "RelativeToolTip": "Controllers\\SubjectsController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAwDoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAiwD0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-04T17:37:44.266Z",
               "EditorCaption": ""
@@ -75,9 +87,48 @@
               "RelativeDocumentMoniker": "Views\\Subjects\\SubjectsList.cshtml",
               "ToolTip": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\Views\\Subjects\\SubjectsList.cshtml",
               "RelativeToolTip": "Views\\Subjects\\SubjectsList.cshtml",
-              "ViewState": "AgIAADoAAAAAAAAAAAAiwE8AAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAmwEEAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-04T17:37:22.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T18:30:47.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UpdateSubject.cshtml",
+              "DocumentMoniker": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\Views\\Subjects\\UpdateSubject.cshtml",
+              "RelativeDocumentMoniker": "Views\\Subjects\\UpdateSubject.cshtml",
+              "ToolTip": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\Views\\Subjects\\UpdateSubject.cshtml",
+              "RelativeToolTip": "Views\\Subjects\\UpdateSubject.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAFwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-05T10:20:07.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NoCacheAttribute.cs",
+              "DocumentMoniker": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\Filters\\NoCacheAttribute.cs",
+              "RelativeDocumentMoniker": "Filters\\NoCacheAttribute.cs",
+              "ToolTip": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\Filters\\NoCacheAttribute.cs",
+              "RelativeToolTip": "Filters\\NoCacheAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-04T18:26:17.961Z",
               "EditorCaption": ""
             }
           ]

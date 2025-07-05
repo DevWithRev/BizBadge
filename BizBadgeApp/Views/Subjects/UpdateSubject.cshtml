@@ -1,0 +1,115 @@
+﻿@model SubjectModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Update Subject</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom Inline Styles -->
+    <style>
+        body {
+            background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+            font-family: 'Segoe UI', sans-serif;
+            margin-top: 40px;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .btn-secondary {
+            border-radius: 8px;
+        }
+
+        .alert {
+            margin-top: 20px;
+        }
+
+        .text-danger {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+       
+
+        <h2>Update Subject</h2>
+
+        <form asp-action="UpdateSubject" method="post">
+            <div class="mb-3">
+                <label asp-for="SubjectCode" class="form-label"></label>
+                <input asp-for="SubjectCode" class="form-control" />
+                <span asp-validation-for="SubjectCode" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="SubjectName" class="form-label"></label>
+                <input asp-for="SubjectName" class="form-control" />
+                <span asp-validation-for="SubjectName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="SubjectDescription" class="form-label"></label>
+                <textarea asp-for="SubjectDescription" class="form-control" rows="4"></textarea>
+                <span asp-validation-for="SubjectDescription" class="text-danger"></span>
+            </div>
+
+            <input type="hidden" asp-for="Id" />
+            <button type="submit" class="btn btn-primary">Update Subject</button>
+            <div class="text-center mt-4">
+                <a asp-action="SubjectsList" asp-controller="Subjects" class="btn btn-secondary">← Back to Subjects List</a>
+            </div>
+
+            
+            
+        </form>
+
+        @if (ViewBag.Success != null)
+        {
+            <div class="alert alert-success">@ViewBag.Success</div>
+        }
+        @if (ViewBag.Error != null)
+        {
+            <div class="alert alert-danger">@ViewBag.Error</div>
+        }
+    </div>
+
+    <!-- Optional: Validation Scripts -->
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</body>
+</html>

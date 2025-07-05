@@ -69,6 +69,36 @@ namespace BizBadgeApp.Repos
                 return 0;
             }
         }
+        public SubjectModel GetSubjectDataById(int Id,string conn) 
+        {
+            SubjectModel subject = new SubjectModel();
+            using(SqlConnection con = new SqlConnection(conn))
+            {
+                try
+                {
+
+
+                    SqlCommand cmd = new SqlCommand("Usp_GetSubjectDataById", con);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Id", Id);
+                    con.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        subject.Id = Convert.ToInt32(reader["Id"]);
+                        subject.SubjectName = reader["SubjectName"].ToString();
+                        subject.SubjectCode = reader["SubjectCode"].ToString();
+                        subject.SubjectDescription = reader["SubjectDescription"].ToString();
+                    }
+                    return subject;
+                }catch(Exception ex)
+                {
+                    subject.ErrorMessage = ex.Message;
+                }
+                return null;
+            }
+
+        }
 
     }
 }
