@@ -65,5 +65,43 @@ namespace BizBadgeApp.Controllers
             SubjectModel subject = repo.GetSubjectDataById(id, con);
             return View("UpdateSubject",subject);
         }
+        [HttpPost]
+        public IActionResult UpdateSubject(SubjectModel Subject)
+        {
+            string con = _connection.GetConnectionStrig();
+            SubjectsRepo repo = new SubjectsRepo();
+            SubjectModel subject = repo.UpdateSubject(Subject, con);
+            if(subject.result > 0) 
+            {
+                ViewBag.Message = "Update Subject Successful";
+                return View("UpdateSubject", subject);
+            }
+            else
+            {
+                ViewBag.ErrorMessage = subject.ErrorMessage;
+                return View("UpdateSubject", subject);
+            }
+                
+        }
+        [HttpPost]
+        public IActionResult DeleteSubject(int Id)
+        {
+            string con = _connection.GetConnectionStrig();
+            SubjectsRepo repo = new SubjectsRepo();
+            SubjectModel subject = repo.DeleteSubject(Id, con);
+
+            if (subject.result > 0)
+            {
+                TempData["Success"] = "Subject deleted successfully.";
+                return RedirectToAction("SubjectsList");
+            }
+            else
+            {
+                TempData["Error"] = subject.ErrorMessage;
+                return RedirectToAction("SubjectsList");
+            }
+        }
+
+
     }
 }

@@ -11,7 +11,7 @@ namespace BizBadgeApp.Repos
             List<SubjectModel> subjectsList = new List<SubjectModel>();
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-               
+
                 using (SqlCommand cmd = new SqlCommand("SELECT * FROM Subjects", conn))
                 {
                     try
@@ -69,10 +69,10 @@ namespace BizBadgeApp.Repos
                 return 0;
             }
         }
-        public SubjectModel GetSubjectDataById(int Id,string conn) 
+        public SubjectModel GetSubjectDataById(int Id, string conn)
         {
             SubjectModel subject = new SubjectModel();
-            using(SqlConnection con = new SqlConnection(conn))
+            using (SqlConnection con = new SqlConnection(conn))
             {
                 try
                 {
@@ -91,7 +91,7 @@ namespace BizBadgeApp.Repos
                         subject.SubjectDescription = reader["SubjectDescription"].ToString();
                     }
                     return subject;
-                }catch(Exception ex)
+                } catch (Exception ex)
                 {
                     subject.ErrorMessage = ex.Message;
                 }
@@ -99,6 +99,57 @@ namespace BizBadgeApp.Repos
             }
 
         }
+        public SubjectModel UpdateSubject(SubjectModel subject, string con)
+        {
+            SubjectModel subjectModel = new SubjectModel();
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(con))
+                {
+                    SqlCommand cmd = new SqlCommand("Usp_UpdateSubject", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@Id", subject.Id);
+                    cmd.Parameters.AddWithValue("@SubjectName", subject.SubjectName);
+                    cmd.Parameters.AddWithValue("@SubjectCode", subject.SubjectCode);
+                    cmd.Parameters.AddWithValue("@SubjectDescription", subject.SubjectDescription);
+                    conn.Open();
+                    subjectModel.result = cmd.ExecuteNonQuery();
+                    conn.Close();
+                    return subjectModel;
+                  
+                }
+            } catch (Exception ex) 
+            {
+                subjectModel.ErrorMessage = ex.Message;
+                return subjectModel;
+            }
+           
 
+        }
+
+        public SubjectModel DeleteSubject(int id, string conn)
+        {
+            SubjectModel subjetModel = new SubjectModel();
+            using (SqlConnection con = new SqlConnection(conn))
+            {
+                try
+                {
+
+                    SqlCommand cmd = new SqlCommand("DELETE FROM Subjects where id=@Id", con);
+                    cmd.Parameters.AddWithValue("Id", id);
+                    con.Open();
+                    subjetModel.result = cmd.ExecuteNonQuery();
+                    con.Close();
+                    return subjetModel;
+                }catch (Exception ex)
+                {
+                    subjetModel.ErrorMessage = ex.Message;
+                    return subjetModel;
+
+                }
+            } 
+
+        }
     }
+
 }
