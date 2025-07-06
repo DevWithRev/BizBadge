@@ -70,7 +70,8 @@
                                     <td>@item.Address</td>
                                     @* <td>@item.ClassId</td> *@
                                     <td>
-                                        <a asp-action="EditStudent" asp-controller="Students" asp-route-Id="@item.Id">Edit</a>/<a asp-action="DeleteStudent" asp-controller="Students" asp-route-Id="@item.Id" asp-route-classId="@item.ClassId">Delete</a>
+                                        <a class="btn btn-primary" asp-action="EditStudent" asp-controller="Students" asp-route-Id="@item.Id">Edit</a>
+                                    <button onclick="DeleteStudent(@item.Id,@item.ClassId,'@Html.Raw(@item.FirstName)')" class="btn btn-danger">Delete</button>
                                         </td>
                                 </tr>
                             }
@@ -93,14 +94,44 @@
 
             </div>
         </div>
+        <!--Delete modal-->
+        <div class="modal fade" id="DeleteStudentModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form method="get" asp-action="DeleteStudent" asp-controller="Students">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="DeleteModalLabel">Delete Confirmation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Are you sure you want to delete <strong id="StudentName"></strong>?
+                            <input type="hidden" id="Id" name="Id" />
+                            <input type="hidden" id="ClassId" name="ClassId" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
 
         <!-- JS Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+                                function DeleteStudent(Id, classId, Name) {
+                                    console.log("Hi",Id,classId);
+                                    document.getElementById("Id").value = Id;
+                                    document.getElementById("ClassId").value = classId;
+                                    document.getElementById('StudentName').innerHTML = Name;
+                                    var modalElement = document.getElementById('DeleteStudentModal');
+                                    var modal = new bootstrap.Modal(modalElement);
+                                    modal.show();
+             }
+
+        </script>
 </body>
 </html>
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
