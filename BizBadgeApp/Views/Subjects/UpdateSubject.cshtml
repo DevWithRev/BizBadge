@@ -84,6 +84,14 @@
                 <textarea asp-for="SubjectDescription" class="form-control" rows="4"></textarea>
                 <span asp-validation-for="SubjectDescription" class="text-danger"></span>
             </div>
+            @if (ViewBag.Message != null)
+            {
+                <div class="alert alert-success">@ViewBag.Message</div>
+            }
+            @if (ViewBag.ErrorMessage != null)
+            {
+                <div class="alert alert-danger">@ViewBag.ErrorMessage</div>
+            }
 
             <input type="hidden" asp-for="Id" />
             <button type="submit" class="btn btn-primary">Update Subject</button>
@@ -95,14 +103,7 @@
             
         </form>
 
-        @if (ViewBag.Success != null)
-        {
-            <div class="alert alert-success">@ViewBag.Success</div>
-        }
-        @if (ViewBag.Error != null)
-        {
-            <div class="alert alert-danger">@ViewBag.Error</div>
-        }
+        
     </div>
 
     <!-- Optional: Validation Scripts -->

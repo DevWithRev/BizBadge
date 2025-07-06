@@ -17,8 +17,12 @@
             <label for="Description" class="form-label">Description</label>
             <textarea class="form-control" id="Description" name="SubjectDescription"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Add Subject</button>
+        <div class="col-12 text-end">
+            <button type="submit" class="btn btn-primary">Add Subject</button>
+            <a asp-controller="Subjects" asp-action="SubjectsList" class="btn btn-danger">Back</a>
+        </div>
     </form>
+    
     @if (ViewBag.Success != null)
     {
         <div class="alert alert-success">@ViewBag.Success</div>

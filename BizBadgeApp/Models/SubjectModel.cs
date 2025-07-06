@@ -7,6 +7,7 @@
         public string SubjectCode { get; set; } 
         public string SubjectDescription { get; set; }
 
+        public int result { get; set; }
         public string ErrorMessage { get; set; }
 
     }
