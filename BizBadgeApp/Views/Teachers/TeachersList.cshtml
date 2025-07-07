@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+<div>
+    <h2>Teachers List</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var teacher in Model)
+            {
+                <tr>
+                    <td>@teacher.Name</td>
+                    <td>@teacher.Subject</td>
+                    <td>@teacher.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
