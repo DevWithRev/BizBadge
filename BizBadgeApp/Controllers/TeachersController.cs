@@ -29,12 +29,6 @@ namespace BizBadgeApp.Controllers
             return View("Error"); // Return an error view if no teachers found
         }
 
-        [HttpGet]
-        public IActionResult FullDetialsOfTeacher(int TeacherId)
-        {
-            string _Conn = _connection.GetConnectionStrig();
-            TeacherRepo teacherRepo = new TeacherRepo();
-            teacherRepo.
-        }
+        
     }
 }

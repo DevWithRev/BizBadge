@@ -2401,11 +2401,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
+      "projectUniqueName": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
       "projectName": "BizBadgeApp",
-      "projectPath": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
+      "projectPath": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
       "packagesPath": "C:\\Users\\revan\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\Source\\repos\\BizBadge\\BizBadgeApp\\obj\\",
+      "outputPath": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
