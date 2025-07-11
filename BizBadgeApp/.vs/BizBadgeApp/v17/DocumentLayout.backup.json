@@ -11,8 +11,16 @@
       "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:repos\\teacherrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\models\\teachermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:models\\teachermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\views\\teachers\\teacherslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:views\\teachers\\teacherslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\views\\subjects\\subjectslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:views\\subjects\\subjectslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +30,42 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TeacherModel.cs",
+              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Models\\TeacherModel.cs",
+              "RelativeDocumentMoniker": "Models\\TeacherModel.cs",
+              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Models\\TeacherModel.cs",
+              "RelativeToolTip": "Models\\TeacherModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T14:50:43.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SubjectsList.cshtml",
+              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Subjects\\SubjectsList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Subjects\\SubjectsList.cshtml",
+              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Subjects\\SubjectsList.cshtml",
+              "RelativeToolTip": "Views\\Subjects\\SubjectsList.cshtml",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAG8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-10T16:25:49.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TeachersList.cshtml",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Teachers\\TeachersList.cshtml",
               "RelativeDocumentMoniker": "Views\\Teachers\\TeachersList.cshtml",
               "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Teachers\\TeachersList.cshtml",
               "RelativeToolTip": "Views\\Teachers\\TeachersList.cshtml",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAowIQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAcwHEAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-10T15:57:47.218Z",
               "EditorCaption": ""
@@ -45,7 +78,7 @@
               "RelativeDocumentMoniker": "Controllers\\TeachersController.cs",
               "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Controllers\\TeachersController.cs",
               "RelativeToolTip": "Controllers\\TeachersController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAYwCAAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAqwCwAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T15:54:45.115Z",
               "EditorCaption": ""
@@ -56,9 +89,9 @@
               "Title": "TeacherRepo.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Repos\\TeacherRepo.cs",
               "RelativeDocumentMoniker": "Repos\\TeacherRepo.cs",
-              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Repos\\TeacherRepo.cs",
-              "RelativeToolTip": "Repos\\TeacherRepo.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAApwEcAAAALAAAAAAAAAA==",
+              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Repos\\TeacherRepo.cs*",
+              "RelativeToolTip": "Repos\\TeacherRepo.cs*",
+              "ViewState": "AgIAACUAAAAAAAAAAAAAAC8AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T15:53:10.279Z",
               "EditorCaption": ""

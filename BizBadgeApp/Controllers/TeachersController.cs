@@ -29,6 +29,21 @@ namespace BizBadgeApp.Controllers
             return View("Error"); // Return an error view if no teachers found
         }
 
-        
+        public IActionResult Delete(int TeacherId)
+        {
+            string conn = _connection.GetConnectionStrig();
+            TeacherRepo teacherRepo = new TeacherRepo();
+            int rowsAffected = teacherRepo.Delete(TeacherId, conn);
+            if (rowsAffected > 0)
+            {
+                TempData["Message"] = "Teacher deleted successfully.";
+            }
+            else
+            {
+                TempData["Message"] = "Error deleting teacher.";
+            }
+            return ListOfTeachers();
+
+        }
     }
 }
