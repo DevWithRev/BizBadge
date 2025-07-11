@@ -65,7 +65,7 @@
                                data-status="@(teacher.IsActive ? "Active" : "Inactive")">
                                 View
                             </a>
-                            <a href="#" onclick="DeleteTeacher(@teacher.TeacherId, '@teacher.FullName')">Delete</a>
+                            <a class="btn btn-sm btn-danger" onclick="DeleteTeacher(@teacher.TeacherId, '@teacher.FullName')">Delete</a>
                         </td>
 
                     </tr>
@@ -111,7 +111,7 @@
         <div class="modal fade" id="TeacherDeleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <form asp-action="Delete" asp-controller="Teacher" method="post">
+                    <form asp-action="Delete" asp-controller="Teachers" method="post">
                         <input type="hidden" id="DeleteTeacherId" name="TeacherId" />
 
                         <div class="modal-header">
