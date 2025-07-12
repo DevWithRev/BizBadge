@@ -14,6 +14,8 @@
         public string Department { get; set; }
         public DateTime? JoiningDate { get; set; }
         public bool IsActive { get; set; } = true;
+
+   
         public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
 }

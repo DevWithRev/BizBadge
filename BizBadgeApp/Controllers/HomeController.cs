@@ -21,6 +21,10 @@ namespace BizBadgeApp.Controllers
             ViewBag.UserName = name;
             return View();
         }
+        public IActionResult Home()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
