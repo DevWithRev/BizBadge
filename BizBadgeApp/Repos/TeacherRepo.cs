@@ -31,6 +31,7 @@ namespace BizBadgeApp.Repos
                         Department = reader["Department"]?.ToString(),
                         JoiningDate = reader["JoiningDate"] == DBNull.Value ? (DateTime?)null : Convert.ToDateTime(reader["JoiningDate"]),
                         IsActive = Convert.ToBoolean(reader["IsActive"]),
+                        
                         CreatedAt = Convert.ToDateTime(reader["CreatedAt"])
 
                     };
@@ -54,5 +55,44 @@ namespace BizBadgeApp.Repos
                 return rowsAffected; // Return true if a row was deleted
             }
         }
+
+        public int UpadateTeacher(TeacherModel Teacher ,string con)
+        {
+            using (SqlConnection conn = new SqlConnection(con))
+            {
+                SqlCommand cmd = new SqlCommand("Usp_UpdateTeacher", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                // Add parameters
+                cmd.Parameters.AddWithValue("@TeacherId", Teacher.TeacherId);
+                cmd.Parameters.AddWithValue("@FullName", Teacher.FullName);
+                cmd.Parameters.AddWithValue("@Email", Teacher.Email);
+                cmd.Parameters.AddWithValue("@PhoneNumber", Teacher.PhoneNumber);
+                cmd.Parameters.AddWithValue("@Gender", Teacher.Gender);
+                cmd.Parameters.AddWithValue("@DateOfBirth", Teacher.DateOfBirth);
+                cmd.Parameters.AddWithValue("@Address", Teacher.Address);
+                cmd.Parameters.AddWithValue("@Qualification", Teacher.Qualification);
+                cmd.Parameters.AddWithValue("@ExperienceYears", Teacher.ExperienceYears);
+                cmd.Parameters.AddWithValue("@Department", Teacher.Department);
+                cmd.Parameters.AddWithValue("@JoiningDate", Teacher.JoiningDate);
+                cmd.Parameters.AddWithValue("@IsActive", Teacher.IsActive);
+
+                conn.Open();
+                int result =cmd.ExecuteNonQuery();
+                conn.Close();
+                return result;
+
+            }
+            return 0; // Return 0 if no rows were affected
+        }
+
+        //public int InsertTeacher(TeacherModel Teacher ,string con)
+        //{
+        //    using(SqlConnection conn = new SqlConnection(con))
+        //    {
+        //        SqlCommand cmd = new SqlCommand();
+
+        //    }
+        //}
     }
 }
