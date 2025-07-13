@@ -32,7 +32,16 @@ namespace BizBadgeApp.Controllers
         [HttpGet]
         public IActionResult AddTeacher()
         {
-            return View();
+            string conn = _connection.GetConnectionStrig();
+            SubjectsRepo subjectsRepo = new SubjectsRepo();
+            TeacherModel teacher = new TeacherModel();
+            teacher.SubjectsForDropDown = subjectsRepo.GetAllSubjects(conn);
+            if (teacher.SubjectsForDropDown == null || teacher.SubjectsForDropDown.Count == 0)
+            {
+                ViewBag.Message = "No subjects found.";
+                return View("Error");
+            }
+            return View(teacher);
         }
 
         [HttpGet]
@@ -51,11 +60,11 @@ namespace BizBadgeApp.Controllers
         }
 
         [HttpPost]
-        //public IActionResult AddTeacher()
-        //{
+        public IActionResult AddTeacher( TeacherModel Teacher)
+        {
 
-        //    return View();
-        //}
+            return View();
+        }
 
         [HttpPost]
         public IActionResult UpdateTeacher(TeacherModel Teacher)

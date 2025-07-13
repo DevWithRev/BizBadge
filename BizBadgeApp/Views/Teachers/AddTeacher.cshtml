@@ -51,9 +51,9 @@
 <body>
     <div class="form-wrapper">
         <div class="form-container">
-            <h4 class="mb-3">@ViewBag.Title</h4>
+            <h4 class="mb-3"></h4>
 
-            <form asp-action="AddTeacher" method="post">
+            <form asp-action="AddTeacher" asp-controller="Teachers" method="post">
                 <div class="row g-3">
                     <div class="col-md-6">
                         <label asp-for="FullName" class="form-label"></label>
@@ -126,10 +126,36 @@
                             <label asp-for="IsActive" class="form-check-label"></label>
                         </div>
                     </div>
+                    <div class="col-md-6 mt-3">
+                      
+                        <!-- 🔹 Dropdown (select one at a time) -->
+                        <div class="container mt-5">
+                            <label class="form-label">Select Subjects (max 3)</label>
+                            <select id="subjectDropdown" class="form-control">
+                                <option value="">-- Select Subject --</option>
+                                @foreach (var subject in Model.SubjectsForDropDown)
+                                {
+                                    <option value="@subject.Id">@subject.SubjectName</option>
+                                }
+                            </select>
+
+                            <div>
+                                <strong>Selected Subjects:</strong>
+                                <ul id="selectedSubjectsList" name="SelectedSubjectIds" class="list-group mt-2"></ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ✅ Hidden inputs will be added here -->
+                    <div id="selectedSubjectsHiddenInputs"></div>
+
+
+
                 </div>
 
                 <div class="form-buttons mt-4 text-end">
-                    <button type="submit" class="btn btn-success">Add Teacher</button>
+                    <button type="submit" class="btn btn-success" >Add Teacher</button>
                     <a asp-action="ListOfTeachers" class="btn btn-secondary ms-2">Back to List</a>
                 </div>
             </form>
@@ -138,5 +164,66 @@
 
     <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdown = document.getElementById("subjectDropdown");
+            const list = document.getElementById("selectedSubjectsList");
+            const hiddenInputs = document.getElementById("selectedSubjectsHiddenInputs");
+            const selectedSubjectIds = new Set();
+
+            function updateHiddenInputs() {
+                hiddenInputs.innerHTML = "";
+                selectedSubjectIds.forEach(id => {
+                    const input = document.createElement("input");
+                    input.type = "hidden";
+                    input.name = "SelectedSubjectIds"; // matches your model
+                    input.value = id;
+                    hiddenInputs.appendChild(input);
+                });
+            }
+
+            function addSubject(id, name) {
+                const li = document.createElement("li");
+                li.className = "list-group-item d-flex justify-content-between align-items-center";
+                li.textContent = name;
+
+                const btn = document.createElement("button");
+                btn.textContent = "❌";
+                btn.className = "btn btn-sm btn-danger";
+                btn.onclick = function (e) {
+                    e.preventDefault();
+                    list.removeChild(li);
+                    selectedSubjectIds.delete(id);
+                    updateHiddenInputs();
+                };
+
+                li.appendChild(btn);
+                list.appendChild(li);
+            }
+
+            dropdown.addEventListener("change", function () {
+                const id = dropdown.value;
+                const name = dropdown.options[dropdown.selectedIndex].text;
+
+                if (!id || selectedSubjectIds.has(id)) {
+                    alert("Already selected or invalid.");
+                    return;
+                }
+
+                if (selectedSubjectIds.size >= 3) {
+                    alert("You can select only 3 subjects.");
+                    return;
+                }
+
+                selectedSubjectIds.add(id);
+                addSubject(id, name);
+                updateHiddenInputs();
+                dropdown.selectedIndex = 0;
+            });
+        });
+    </script>
+
+
+
 </body>
 </html>
