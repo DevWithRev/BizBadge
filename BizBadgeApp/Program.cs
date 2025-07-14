@@ -1,9 +1,12 @@
+using BizBadgeApp.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 //This Helps to get ConnectionString
 builder.Services.AddSingleton<BizBadgeApp.Helper.DbConnectionStringcs>();
+builder.Services.AddHttpClient<BizBadgeApp.Services.WeatherServices>();
 builder.Services.AddSession();
 
 var app = builder.Build();
