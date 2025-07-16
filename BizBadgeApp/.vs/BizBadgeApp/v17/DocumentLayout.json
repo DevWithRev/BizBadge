@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\models\\weatherresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:models\\weatherresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\services\\weatherservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:services\\weatherservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\models\\weatherresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:models\\weatherresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\models\\teachermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -106,7 +106,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Shared\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Index.cshtml",
@@ -114,8 +114,7 @@
               "RelativeToolTip": "Views\\Shared\\Index.cshtml",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-13T19:27:54.974Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T19:27:54.974Z"
             },
             {
               "$type": "Document",
@@ -125,14 +124,14 @@
               "RelativeDocumentMoniker": "Controllers\\WeatherController.cs",
               "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Controllers\\WeatherController.cs",
               "RelativeToolTip": "Controllers\\WeatherController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T18:48:24.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "WeatherServices.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Services\\WeatherServices.cs",
               "RelativeDocumentMoniker": "Services\\WeatherServices.cs",
@@ -140,25 +139,24 @@
               "RelativeToolTip": "Services\\WeatherServices.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAApwCQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T18:38:56.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T18:38:56.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "WeatherResponse.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Models\\WeatherResponse.cs",
               "RelativeDocumentMoniker": "Models\\WeatherResponse.cs",
               "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Models\\WeatherResponse.cs",
               "RelativeToolTip": "Models\\WeatherResponse.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAA3wEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEQAAAAAAAAAAAAkwEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T18:34:31.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -166,8 +164,7 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAACEAAAAAAAAAAAAiwCcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-12T10:44:31.258Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T10:44:31.258Z"
             },
             {
               "$type": "Document",
@@ -179,12 +176,11 @@
               "RelativeToolTip": "Models\\TeacherModel.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAywBcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T14:50:43.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-11T14:50:43.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -192,8 +188,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAApwBEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T10:32:03.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-12T10:32:03.887Z"
             },
             {
               "$type": "Document",
@@ -210,15 +205,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "BizBadgeApp",
+              "Title": "BizBadgeApp.csproj",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
               "RelativeDocumentMoniker": "BizBadgeApp.csproj",
               "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
               "RelativeToolTip": "BizBadgeApp.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-13T18:38:08.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T18:38:08.855Z"
             },
             {
               "$type": "Document",
@@ -230,8 +224,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T18:46:33.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-13T18:46:33.421Z"
             },
             {
               "$type": "Document",
@@ -255,8 +248,7 @@
               "RelativeToolTip": "Controllers\\TeachersController.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAkwD8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T15:54:45.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-10T15:54:45.115Z"
             },
             {
               "$type": "Document",
