@@ -3,12 +3,24 @@
   "WorkspaceRootPath": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:controllers\\weathercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\models\\weatherresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:models\\weatherresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\views\\students\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:views\\students\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\views\\students\\classwisestudentslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:views\\students\\classwisestudentslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\services\\weatherservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,18 +75,6 @@
       "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:models\\subjectmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\views\\students\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:views\\students\\studentpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\views\\students\\classwisestudentslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:views\\students\\classwisestudentslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|d:\\bizbadage\\bizbadge\\bizbadgeapp\\views\\subjects\\subjectslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{801191DB-5C49-47BF-B641-86BD98C16C54}|BizBadgeApp.csproj|solutionrelative:views\\subjects\\subjectslist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -102,61 +102,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Shared\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\Index.cshtml",
-              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Shared\\Index.cshtml",
-              "RelativeToolTip": "Views\\Shared\\Index.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-13T19:27:54.974Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WeatherController.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Controllers\\WeatherController.cs",
               "RelativeDocumentMoniker": "Controllers\\WeatherController.cs",
               "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Controllers\\WeatherController.cs",
               "RelativeToolTip": "Controllers\\WeatherController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T18:48:24.821Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WeatherServices.cs",
-              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Services\\WeatherServices.cs",
-              "RelativeDocumentMoniker": "Services\\WeatherServices.cs",
-              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Services\\WeatherServices.cs",
-              "RelativeToolTip": "Services\\WeatherServices.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAApwCQAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-13T18:38:56.69Z"
+              "DocumentIndex": 4,
+              "Title": "ClassWiseStudentsList.cshtml",
+              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Students\\ClassWiseStudentsList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Students\\ClassWiseStudentsList.cshtml",
+              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Students\\ClassWiseStudentsList.cshtml",
+              "RelativeToolTip": "Views\\Students\\ClassWiseStudentsList.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T10:34:55.249Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "StudentPage.cshtml",
+              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Students\\StudentPage.cshtml",
+              "RelativeDocumentMoniker": "Views\\Students\\StudentPage.cshtml",
+              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Students\\StudentPage.cshtml",
+              "RelativeToolTip": "Views\\Students\\StudentPage.cshtml",
+              "ViewState": "AgIAACwAAAAAAAAAAAAcwD0AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T10:50:45.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "WeatherResponse.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Models\\WeatherResponse.cs",
               "RelativeDocumentMoniker": "Models\\WeatherResponse.cs",
               "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Models\\WeatherResponse.cs",
               "RelativeToolTip": "Models\\WeatherResponse.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAkwEQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-13T18:34:31.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "StudentsController.cs",
+              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Controllers\\StudentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StudentsController.cs",
+              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Controllers\\StudentsController.cs",
+              "RelativeToolTip": "Controllers\\StudentsController.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAqwAwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-12T10:40:22.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeatherServices.cs",
+              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Services\\WeatherServices.cs",
+              "RelativeDocumentMoniker": "Services\\WeatherServices.cs",
+              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Services\\WeatherServices.cs",
+              "RelativeToolTip": "Services\\WeatherServices.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-13T18:38:56.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "TeacherModel.cs",
+              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Models\\TeacherModel.cs",
+              "RelativeDocumentMoniker": "Models\\TeacherModel.cs",
+              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Models\\TeacherModel.cs",
+              "RelativeToolTip": "Models\\TeacherModel.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAywBcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T14:50:43.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -169,18 +209,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "TeacherModel.cs",
-              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Models\\TeacherModel.cs",
-              "RelativeDocumentMoniker": "Models\\TeacherModel.cs",
-              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Models\\TeacherModel.cs",
-              "RelativeToolTip": "Models\\TeacherModel.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAywBcAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-11T14:50:43.392Z"
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Shared\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Index.cshtml",
+              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Shared\\Index.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-13T19:27:54.974Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -192,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "AddTeacher.cshtml",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Teachers\\AddTeacher.cshtml",
               "RelativeDocumentMoniker": "Views\\Teachers\\AddTeacher.cshtml",
@@ -204,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "BizBadgeApp.csproj",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\BizBadgeApp.csproj",
               "RelativeDocumentMoniker": "BizBadgeApp.csproj",
@@ -216,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -228,7 +268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "TeachersList.cshtml",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Teachers\\TeachersList.cshtml",
               "RelativeDocumentMoniker": "Views\\Teachers\\TeachersList.cshtml",
@@ -240,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "TeachersController.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Controllers\\TeachersController.cs",
               "RelativeDocumentMoniker": "Controllers\\TeachersController.cs",
@@ -248,11 +288,12 @@
               "RelativeToolTip": "Controllers\\TeachersController.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAkwD8AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-10T15:54:45.115Z"
+              "WhenOpened": "2025-07-10T15:54:45.115Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "SubjectModel.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Models\\SubjectModel.cs",
               "RelativeDocumentMoniker": "Models\\SubjectModel.cs",
@@ -264,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "SubjectsRepo.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Repos\\SubjectsRepo.cs",
               "RelativeDocumentMoniker": "Repos\\SubjectsRepo.cs",
@@ -276,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "TeacherRepo.cs",
               "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Repos\\TeacherRepo.cs",
               "RelativeDocumentMoniker": "Repos\\TeacherRepo.cs",
@@ -285,30 +326,6 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAF8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-10T15:53:10.279Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Controllers\\StudentsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\StudentsController.cs",
-              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Controllers\\StudentsController.cs",
-              "RelativeToolTip": "Controllers\\StudentsController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T10:40:22.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ClassWiseStudentsList.cshtml",
-              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Students\\ClassWiseStudentsList.cshtml",
-              "RelativeDocumentMoniker": "Views\\Students\\ClassWiseStudentsList.cshtml",
-              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Students\\ClassWiseStudentsList.cshtml",
-              "RelativeToolTip": "Views\\Students\\ClassWiseStudentsList.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-12T10:34:55.249Z"
             },
             {
               "$type": "Document",
@@ -321,18 +338,6 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-10T16:25:49.565Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "StudentPage.cshtml",
-              "DocumentMoniker": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Students\\StudentPage.cshtml",
-              "RelativeDocumentMoniker": "Views\\Students\\StudentPage.cshtml",
-              "ToolTip": "D:\\BizBadage\\BizBadge\\BizBadgeApp\\Views\\Students\\StudentPage.cshtml",
-              "RelativeToolTip": "Views\\Students\\StudentPage.cshtml",
-              "ViewState": "AgIAACwAAAAAAAAAAAAcwD0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-12T10:50:45.148Z"
             },
             {
               "$type": "Document",
